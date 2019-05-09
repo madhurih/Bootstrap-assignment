@@ -1,15 +1,18 @@
- <!DOCTYPE html>
+<!--html document-->
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">      
   <meta name="keywords" content="tourism, india, travel, trip, tourist">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Indian Tourism</title>
+
+  <!--link main.css file-->
   <link rel="stylesheet" href="main.css">
+  <!-- link glyphicon.css-->
   <link rel="stylesheet" href="bootstrap-glyphicons.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-
+  <!--link awesome font file-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -25,13 +28,15 @@
 
 </head>  <!-- close head-->
 
+
+<!--bady section-->
 <body>
 	<nav class="navbar navbar-expand-md sticky-top bg-dark navbar-dark">
 	 	<div class="container">
 	 		<a href="#" class="navbar-brand text-warning font-weight-bold"><img src="img/logo.png" alt="website-logo"> Indian Tourism</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsenavbar">
 				<span class="navbar-toggler-icon"></span>
-			</button>
+			</button>  <!--button closer-->
 			<div class="collapse navbar-collapse text-center" id="collapsenavbar">
 
 				<ul class="navbar-nav ml-auto">
@@ -47,14 +52,23 @@
 				    <li class="nav-item">
 				    	<a href="#" class="nav-link text-white">Destinations</a>
 				    </li>
-				    <li class="nav-item">
-				    	<a href="#" class="nav-link text-white">About Us</a>
-				    </li>   
-				</ul><!-- cloase ul-->
 
-			</div>
-	 	</div>
-	</nav>
+                    <div class="dropdown">
+                        <a class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Support
+                        </a> <!--btn cloasing-->
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Contact Us</a>
+                            <a class="dropdown-item" href="#">Complete Booking</a>
+                            <a class="dropdown-item" href="#">Make a Payment</a>
+                        </div><!-- dropdown menu closer-->
+                    </div><!--dropdown closer-->
+
+				</ul><!-- close ul navbar-nav-->
+
+			</div><!--collapse closer-->
+	 	</div><!--container class closer-->
+	</nav><!--navbar class closer-->
 	
 	<section id="carousel">
 		<div id="carousel-home" class="carousel slide" data-ride="carousel" data-interval="2000">
@@ -67,7 +81,7 @@
 		    <li data-target="#carousel-home" data-slide-to="5"></li>
 		    <li data-target="#carousel-home" data-slide-to="6"></li>
 		    <li data-target="#carousel-home" data-slide-to="7"></li>
-		  </ol>
+		  </ol><!--carousel-indiactor ol closer-->
 		  <div class="carousel-inner" role="listbox">
 		    <div class="carousel-item active">
 		      <img src="img/head1.jpg" class="d-block w-100" alt="">
@@ -102,86 +116,45 @@
 		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
 		    <span class="sr-only">Next</span>
 		  </a>
-		</div>
-	</section>
+		</div><!-- carousel-home id close-->
+	</section><!-- caroursel closing-->
 	
-
-	<section id="india-tours">
-         <div class="section-content">
-             <div class="container">
-                 <h2>India Tours</h2>
-                
-                 <div class="row">
-                     <div class="col-sm-12">
-                         <div class="card-group">
-                             <div class="card">                                 
-                                 <img src="img/northindia-state.jpg" alt="NorthIndia">
-                                 <div class="card-block">
-                                     <h3 class="card-title">North India</h3>                              
-                                 </div>
-                             </div>
-
-                             <div class="card">                                
-                                 <img src="img/southindia-state.png" alt="southIndia">
-                                 <div class="card-block">
-                                     <h3 class="card-title">South India</h3>                              
-                                 </div>
-                             </div>
-
-                             <div class="card">
-                                 <img src="img/eastindia-state.jpg" alt="EastIndia">
-                                 <div class="card-block">
-                                     <h3 class="card-title">East India</h3>                              
-                                 </div>
-                             </div>
-
-                             <div class="card">
-                                 <img src="img/eastindia-state.jpg" alt="EastIndia">
-                                 <div class="card-block">
-                                     <h3 class="card-title">East India</h3>                              
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-         </div>
-    </section>	
 
 	<div class="container">
 		<div class="jumbotron">
-		  <h1 class="display-4">Hello, Tourist!</h1>
-		  <p class="lead">Want to Start Your Journey of a Lifetime...!</p>
-		  <hr class="my-4">
-		  <p>Explore &amp; Experience Incredible India with Indian Tourism.</p>
+    		<h1 class="display-4">Hello, Tourist!</h1>
+    		<p class="lead">Want to Start Your Journey of a Lifetime...!</p>
+    		<hr class="my-4">
+    		<p>Explore &amp; Experience Incredible India with Indian Tourism.</p>
 		 
-		 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
-  Plan My Trip
-</button>
+		      <!-- Button trigger modal -->
+            <i class="fa fa-hand-o-right fa-2x"></i>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+              Plan My Trip
+            </button>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Thank You</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        Welcome to Indian Tourism. Plan your trip now.
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Login</button>
-      </div>
-    </div>
-  </div>
-</div>
-		</div>
-	</div>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Thank You</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div><!--model-header closing-->
+                  <div class="modal-body">
+                    Welcome to Indian Tourism. Plan your trip now.
+                  </div> <!--model-body closing-->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Login</button>
+                  </div><!--model-footer closing-->
+                </div><!--model-content closer-->
+              </div><!--model-dialog closer-->
+            </div><!--model closer-->
+	   </div><!--jumbotron close-->
+    </div><!--container class cloaser-->
 	
 	
 	<section id="about">
@@ -197,14 +170,165 @@
                         <a href="" class="btn btn-sm btn-secondary-outline">twitter</a>
                         <a href="" class="btn btn-sm btn-secondary-outline">facebook</a>
                         <a href="" class="btn btn-sm btn-secondary-outline">youtube</a>
-                    </div>
-                </div>
-            </div>
+                    </div><!--about text close-->
+                </div><!--col-md-6 close-->
+            </div><!--container class closer-->
         </div>
-    </section>
+    </section><!--about section close-->
+    
+
+    <div class="container">
+        <ul class="nav nav-tabs nav-justified">
+            <!--<li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#home" data-toggle="tab">Profile</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Login</a>
+                  <a class="dropdown-item" href="#">Messages</a>
+                  <a class="dropdown-item" href="#">Notifications</a> 
+                </div>
+            </li>-->
+            <li class="nav-item">
+                <a href="#home" class="nav-link" data-toggle="tab">Profile</a>
+            </li>  
+            <li class="nav-item">
+                <a href="#pack" class="nav-link" data-toggle="tab">Packages</a>
+            </li>            
+            <li class="nav-item">
+               <a class="nav-link" href="#guide" data-toggle="tab">Guide</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#log" data-toggle="tab">Logout</a>
+            </li>
+        </ul><!--ul nav close-->
+
+        <div class="tab-content container">
+            <div class="tab-pane" id="home">
+                <section id="cover">
+                    <div id="cover-caption">
+                        <div class="container">
+                            <div class="col-sm-10 col-sm-offset-1">
+                                <br>
+                                <p class="display-3">Welcome to Indian Tourism</p>    
+                                
+                                <form action="" class="form-inline">
+                                    <div class="form-group">
+                                        <label class="sr-only">Name</label>
+                                        <input type="text" class="form-control form-control-lg" placeholder="Madhuri Hire">
+                                    </div><!--form-group close-->
+                                    <div class="form-group">
+                                        <label class="sr-only">Email</label>
+                                        <input type="text" class="form-control form-control-lg" placeholder="madhuri.hire@example.com">
+                                    </div><!--form group close-->
+                                    <button type="submit" class="btn btn-success btn-lg">Login</button>
+                                </form><!--form close-->
+                                <br>
+                            </div><!--col class close-->
+                        </div><!--container close-->
+                    </div><!--cover caption close-->
+                </section><!-- cover section close-->
+            </div><!--tab pane close-->
+
+            <div class="tab-pane" id="pack">
+
+                <section id="packages">
+                     <div class="section-content">
+                         <div class="container">
+                            <br>
+                             <h2>India Tours</h2>
+                            
+                             <div class="row">
+                                 <div class="col-sm-12">
+                                     <div class="card-group">
+                                         <div class="card">                                 
+                                             <img src="img/northindia-state.jpg" alt="NorthIndia">
+                                             <div class="card-block">
+                                                <br>
+                                                 <h3 class="card-title">North India</h3>                              
+                                             </div>
+                                         </div><!--card close-->
+
+                                         <div class="card">                                
+                                             <img src="img/southindia-state.png" alt="southIndia">
+                                             <div class="card-block">
+                                                <br>
+                                                 <h3 class="card-title">South India</h3>                              
+                                             </div>
+                                         </div><!--card close-->
+
+                                         <div class="card">
+                                             <img src="img/eastindia-state.jpg" alt="EastIndia">
+                                             <div class="card-block">
+                                                <br>
+                                                 <h3 class="card-title">East India</h3>                              
+                                             </div>
+                                         </div><!--card close-->
+
+                                         <div class="card">
+                                             <img src="img/eastindia-state.jpg" alt="EastIndia">
+                                             <div class="card-block">
+                                                <br>
+                                                 <h3 class="card-title">East India</h3>                              
+                                             </div>
+                                         </div><!--card close-->
+                                     </div><!--card-group close-->
+                                 </div><!--col close-->
+                             </div><!--row close-->
+                         </div><!--container close-->
+                     </div><!--section content close-->
+                </section><!--packages close-->  
 
 
+            </div><!--tabpane close-->                
 
+            <div class="tab-pane" id="guide">           
+               <section id="guide-sec">
+                     <div class="section-content">
+                         <div class="container">
+                            <br>
+                             <h2>India Travel Guide</h2>
+                            
+                             <div class="row">
+                                 <div class="col-sm-12">
+                                     <div class="card-group">
+                                         <div class="card">                                 
+                                             <img src="img/travelguide.jpg" alt="travelguide">
+                                             <div class="card-block">
+                                                <br>
+                                                <h3 class="card-title">Travel Guide</h3>                              
+                                             </div>
+                                         </div><!--card close-->
+
+                                         <div class="card">                                
+                                             <img src="img/india-attraction.jpg" alt="india-attraction">
+                                             <div class="card-block">
+                                                <br>
+                                                <h3 class="card-title">India Attraction</h3>                              
+                                             </div>
+                                         </div><!--card close-->
+
+                                         <div class="card">
+                                             <img src="img/travel-tool.jpg" alt="travel-tool">
+                                             <div class="card-block">
+                                                <br>
+                                                <h3 class="card-title">Travel Tool</h3>                              
+                                             </div>
+                                         </div><!--card close-->
+
+                                     </div><!--card group close-->
+                                 </div><!--col close-->
+                             </div><!--row close-->
+                         </div><!--container close-->
+                     </div><!--section content close-->
+                </section>  <!--guide-sec close-->
+            </div><!--tab-pane close-->
+    
+            <div class="tab-pane" id="log">
+                <br><br>
+                <h1>You are successfully logged out</h1>
+                <br><br>
+            </div><!--tab-pane close-->
+        </div><!--tab-content close-->
+    </div><!--container close-->
 
 
     <footer id="footer-main">
@@ -213,15 +337,15 @@
                 <div class="col-sm-3">
                     <p>uncopyright 2019 Indian Toursm, India. All rights reserved</p>
                     <p>For more details--<br><a href=""> ask@indian-tourism@email.com</a></p>
-                </div>
+                </div><!--col closer-->
                 <div class="col-sm-3">
                     <ul class="list-unstyled">
                         <li><a href="">home</a></li>
                         <li><a href="">what we do</a></li>
                         <li><a href="">about</a></li>
                         <li><a href="">latest</a></li>
-                    </ul>
-                </div>
+                    </ul><!-ul closer-->
+                </div><!--col close-->
                 <div class="col-sm-3">
                     <ul class="list-unstyled">
                         <li><a href="">facebook</a></li>
@@ -229,13 +353,14 @@
                         <li><a href="">youtube</a></li>
                         <li><a href="">linkedin</a></li>
                     </ul>
-                </div>
+                </div><!--col close-->
                 <div class="col-sm-3">
                     <h6>Come to us...</h6>
                     <p>Start your journey today with Indian Tourism, India's leading tourism organization. And enjoy your dream trip.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+                </div><!--col close-->
+            </div><!--row closer-->
+        </div><!--container class close-->
+    </footer><!--footer closed-->
+
 </body><!--body closer-->
 </html><!--html closer-->

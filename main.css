@@ -2,6 +2,7 @@ body html{
 	margin: 0;
 	padding: 0;
 }
+
 .carousel-item{
 	width: 100%;
 	height: 500px;
@@ -13,6 +14,7 @@ body html{
 	height: 200px;
 	width: 250px;
 }
+
 .container h2{
 	text-decoration: none;
 	font-weight: bold;
@@ -32,6 +34,10 @@ body html{
 	background-image: url(img/new2.png);
 	background-size: cover;
 }
+.container{
+	padding-bottom: 0px;
+	margin: 0px;
+}
 
 .about-text{
 	display: block;
@@ -49,6 +55,16 @@ body html{
 	white-space: nowrap;
 	border: 1px solid;
 }
+
+.display-3{
+	font-size: 14;
+	text-align: center;
+}
+
+.form-inline{
+	margin-left: 100px;
+}
+
 
 #footer-main {
     background: #222;
