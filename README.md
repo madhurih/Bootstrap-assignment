@@ -85,20 +85,23 @@ For transparency into our release cycle and in striving to maintain backward com
 See [the Releases section of our GitHub project](https://github.com/twbs/bootstrap/releases) for changelogs for each release version of Bootstrap. Release announcement posts on [the official Bootstrap blog](http://blog.getbootstrap.com) contain summaries of the most noteworthy changes made in each release.
 
 
-## Creators
-
-**Mark Otto**
-
-- <https://twitter.com/mdo>
-- <https://github.com/mdo>
-
-**Jacob Thornton**
-
-- <https://twitter.com/fat>
-- <https://github.com/fat>
-
-
 
 ## Copyright and license
 
-Code and documentation copyright 2011-2015 Twitter, Inc. Code released under [the MIT license](https://github.com/twbs/bootstrap/blob/master/LICENSE). Docs released under [Creative Commons](https://github.com/twbs/bootstrap/blob/master/docs/LICENSE).s
+Code and documentation copyright 2011-2015 Twitter, Inc. Code released under [the MIT license](https://github.com/twbs/bootstrap/blob/master/LICENSE). Docs released under [Creative Commons](https://github.com/twbs/bootstrap/blob/master/docs/LICENSE).
+
+
+### navbar
+ added navbar including websute logo and top heading menus and dropdown menu button. 
+
+### carousel
+ added carousel functionality for 8 images changing in every 2 sec.
+
+###jumbotron
+jumbotron added as hero unit of website includes the active button that lets user to plan and book there trip.
+
+### grid framework
+##tabbed pane 
+used row column frmeworn in tabbed pane
+##model glyphicons added
+## footer
